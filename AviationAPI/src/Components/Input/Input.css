@@ -1,0 +1,58 @@
+#input-parent-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#form-container-1 {
+    display: flex;
+    max-width: 20vw;
+}
+#name-input-1 {
+    font-size: 1.3em;
+    box-shadow: 1px 1px 1px black;
+    margin: 5px;
+    border-radius: 10px;
+}
+#form-button-1 {
+    font-size: 1.3em;
+    box-shadow: inset 1px 1px 1px white, 1px 1px 1px black;
+    width: 90%;
+    align-self: center;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+#form-button-1:active {
+    background-color: darkgray;
+    box-shadow: inset 1px 1px 1px black, 1px 1px 1px white;
+}
+.input-container-data {
+    margin: 10px auto -10px auto;
+}
+.input-container-no-data {
+    height: 100vh;
+    background-image: url(../../assets/pokemon-trainer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container-data {
+    display: flex;
+    flex-direction: column;
+}
+.form-container-no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#credit-to-pokeapi {
+    position: absolute;
+    bottom: 8px;
+    right: 18px;
+    font-size: 17px;
+}
+#pokeapi-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+#pokeapi-link:visited {
+    color: inherit;
+}

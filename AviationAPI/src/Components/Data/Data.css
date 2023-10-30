@@ -1,0 +1,20 @@
+#data-parent {
+    width: 300px;
+    border: 10px solid gold;
+    margin: 5vh auto;
+}
+
+#name-hp {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 12px;
+    font-size: 16px;
+}
+
+#hp-stat {
+    
+}
+
+.poke-stats {
+    margin: 3px;
+}

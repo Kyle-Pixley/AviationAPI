@@ -1,0 +1,32 @@
+#poke-sprites-container {
+    display: flex;
+    border: 3px solid gold;
+    margin: 1vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#buttons-parent {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.sprite-buttons {
+    padding: 1px 2px;
+    margin: 1px;
+    background: none;
+    cursor: pointer;
+}
+
+#sprite-image {
+    margin: auto;
+    width: 15vw;
+}
+
+.sprite-groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid salmon;
+    width: 12vw;
+}
