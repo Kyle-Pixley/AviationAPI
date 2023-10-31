@@ -134,7 +134,7 @@ return (
         <Sprites data={data} />
         <PokeMoves data={data} name={name}/>
 
-        {data.stats.map((i, index) => {
+        {/* {data.stats.map((i, index) => {
             if (index > 0) { 
             return (
                 <p className='poke-stats' key={index}>
@@ -143,7 +143,7 @@ return (
                     );
                 }
                 return null; 
-            })}
+            })} */}
 
     </div>
 )

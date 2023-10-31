@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #buttons-parent {
     display: flex;
     justify-content: space-evenly;

@@ -10,9 +10,27 @@
     padding: 3px 12px;
     font-size: 16px;
 }
+#move-parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em;
+}
+#move-name {
+    font-size: 1.2em;
+}
+#move-divider {
+    border: 1px solid #2c211f;
+    width: 85%;
+    margin: auto;
+    align-self: center;
+}
+#second-move-parent {
+    display: flex;
+    padding: 0.4em;
+}
 
-#hp-stat {
-    
+#second-move-name {
+    font-size: 1.2em;
 }
 
 .poke-stats {
