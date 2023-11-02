@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Evolution from '../Evolution/Evolution';
 import './Bio.css'
 
 function Bio({ data, moveData, name }) {
@@ -16,11 +17,24 @@ function Bio({ data, moveData, name }) {
             });
     }, [moveData])
 
+    const isBioEnglish = () => {
+        if(bio.flavor_text_entries[0].language.name === 'en') {
+            return bio.flavor_text_entries[0].flavor_text
+        } else if(bio.flavor_text_entries[1].language.name) {
+            return bio.flavor_text_entries[1].flavor_text
+        } else return bio.flavor_text_entries[2].flavor_text
+    }
+
   return (
     <div>
-        {bio ? (
-            <p id='bio'>{bio.flavor_text_entries[0].flavor_text}</p>
-        ) : null}
+    {bio ? (
+        <div>
+            <p id='bio'>{isBioEnglish()}</p>
+            <Evolution bio={bio} name={name} />
+        </div>
+    ) : (
+        <p>Loading bio data...</p>
+    )}
     </div>
   )
 }

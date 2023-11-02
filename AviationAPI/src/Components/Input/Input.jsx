@@ -40,7 +40,7 @@ function Input({ setName, data }) {
             type='text' 
             placeholder='Enter Pokemon Name' 
             value={pokemonName} 
-            onChange={(e) => setPokemonName(e.target.value)}/>
+            onChange={(e) => setPokemonName(e.target.value.toLowerCase())}/>
 
             <button 
             id='form-button-1'

@@ -124,8 +124,6 @@ return (
             </h1>
         </div>
 
-
-
         {data.types.map((i, index) => 
         <p key={index}>
             {i.types}
