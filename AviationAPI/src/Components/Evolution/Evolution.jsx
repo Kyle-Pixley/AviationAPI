@@ -41,25 +41,40 @@ function Evolution({ bio, name }) {
 
     
         function displayEvolutionChain(name) {
-            if(evolutionChain &&
+            if(name === 'poliwhirl') {
+                return (
+                    <div id='evolution-parent'>
+                        <p>Evolves To: Poliwrath or Politoed</p>
+                    </div>
+                )
+            } else if(evolutionChain &&
             evolutionChain.chain &&
             evolutionChain.chain.evolves_to[0] &&
             evolutionChain.chain.evolves_to[0].evolves_to[0] && evolutionChain.chain.evolves_to[0].evolves_to[0].species.name !== name) {
 
                 if(evolutionChain.chain.species.name === name) {
-                    return evolutionChain.chain.evolves_to.species.name
-                } else if (evolutionChain.chain.evolves_to.species.name === name) {
-                    return evolutionChain.chain.evolves_to[0].evolves_to[0].species.name
+                    return (
+                        <div id='evolution-parent'>
+                            <p>Evolves To: &nbsp;</p>
+                            {capitalizeWords(evolutionChain.chain.evolves_to[0].species.name)}
+                        </div>
+                    )
+                } else if (evolutionChain.chain.evolves_to[0].species.name === name) {
+                    return (
+                        <div id='evolution-parent'>
+                            <p>Evolves To: &nbsp;</p>
+                            {evolutionChain.chain.evolves_to[0].evolves_to[0].species.name}
+                        </div>
+                    )
                 } else if (evolutionChain.chain.evolves_to[0].evolves_to[0].species.name === name) {
                     return null
                 }
-
             }
         };
-    
+    //todo add rockruff and probably others this might be time consuming
 
   return    (
-    <div id='evolution-parent'>
+    <div>
         {displayEvolutionChain(name)}
     </div>
   )
