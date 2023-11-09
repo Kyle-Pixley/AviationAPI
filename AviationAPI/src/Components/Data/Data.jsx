@@ -132,17 +132,6 @@ return (
         <Sprites data={data} />
         <PokeMoves data={data} name={name}/>
 
-        {/* {data.stats.map((i, index) => {
-            if (index > 0) { 
-            return (
-                <p className='poke-stats' key={index}>
-                    {capitalizeWords(i.stat.name)}: {i.base_stat}
-                </p>
-                    );
-                }
-                return null; 
-            })} */}
-
     </div>
 )
 };

@@ -12,6 +12,7 @@
     box-shadow: 1px 1px 1px black;
     margin: 5px;
     border-radius: 10px;
+    text-indent: 5px;
 }
 #form-button-1 {
     font-size: 1.3em;
@@ -27,12 +28,10 @@
 }
 .input-container-data {
     margin: 10px auto -10px auto;
+    
 }
 .input-container-no-data {
     height: 100vh;
-    background-image: url(../../assets/pokemon-trainer-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .form-container-data {
     display: flex;
@@ -55,4 +54,31 @@
 }
 #pokeapi-link:visited {
     color: inherit;
+}
+
+@media (max-width: 500px) {
+    #input-parent-1 {
+        /* height: fit-content; */
+        overflow-x: hidden;
+    }
+    #form-container-1 {
+        margin: 10px auto 150px auto;
+    }
+    #name-input-1 {
+        width: 70vw;
+        height: 40px;
+        align-self: center;
+        text-align: center;
+        padding: 0;
+    }
+    #form-button-1 {
+        height: 50px;
+        width: 70vw;
+    }
+    .input-container-data {
+        height: fit-content;
+    }
+    .form-container-data {
+        height: fit-content;
+    }
 }

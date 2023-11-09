@@ -6,9 +6,9 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <div id='main-body'>
       <Yugioh name={name} />
-    </>
+    </div>
   )
 }
 

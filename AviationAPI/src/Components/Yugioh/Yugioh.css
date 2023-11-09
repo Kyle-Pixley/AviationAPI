@@ -3,3 +3,9 @@
     background-size: cover;
     font-size: 1.17em;
 }
+
+@media (max-width: 500px) {
+    #data-parent {
+        margin-top: -120px;
+    }
+}

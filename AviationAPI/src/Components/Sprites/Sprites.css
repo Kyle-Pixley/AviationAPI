@@ -31,3 +31,8 @@
     border: 1px solid salmon;
     width: 12vw;
 }
+@media (max-width: 500px) {
+    #sprite-image {
+        width: 50vw;
+    }
+}

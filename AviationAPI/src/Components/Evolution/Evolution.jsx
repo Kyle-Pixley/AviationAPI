@@ -47,6 +47,18 @@ function Evolution({ bio, name }) {
                         <p>Evolves To: Poliwrath or Politoed</p>
                     </div>
                 )
+            } else if(name === 'applin') {
+                return (
+                    <div id='evolution-parent'>
+                        <p>Evolves To: Flapple or Appletun</p>
+                    </div>
+                )
+            }else if(name === 'eevee') {
+                return (
+                    <div id='evolution-parent'>
+                        <p>Evolves To: A lot</p>
+                    </div>
+                )
             } else if(evolutionChain &&
             evolutionChain.chain &&
             evolutionChain.chain.evolves_to[0] &&
